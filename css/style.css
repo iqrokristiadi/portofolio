@@ -3,7 +3,7 @@
 	border: 5px solid #666;
 }
 
-.about hr {
+hr {
 	width: 250px;
 	border-top:3px solid #999 ;
 }
@@ -14,4 +14,8 @@
 
 section {
 	min-height: 600px;
+}
+
+.portofolio {
+	background-color: #eee;
 }
