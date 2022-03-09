@@ -7,6 +7,26 @@ body {
 	margin-top: 30px;
 }
 
+.navbar {
+	background-color: #3d0101;
+}
+
+nav .navbar-nav li a{
+  color: white !important;
+  }
+
+nav .navbar-nav li a:hover{
+  color: red !important;
+  }
+
+.navbar-brand {
+	color: white !important;
+}
+
+.navbar-brand:hover {
+	color: red !important;
+}
+
 .jumbotron {
 	background-image: url('../img/3.jfif');
 	background-size: cover;
@@ -56,7 +76,10 @@ section {
 }
 
 .portofolio {
-	background-color: #eee;
+	background-image: url('../img/2.jfif');
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
 }
 
 .portofolio .thumbnail {
