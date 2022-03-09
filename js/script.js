@@ -17,6 +17,13 @@ $('.page-scroll').on('click' , function(e){
 
 // Parallax
 
+	// About
+
+$(window).on('load', function(){
+	$('.pKiri').addClass('pMuncul');
+	$('.pKanan').addClass('pMuncul');
+})
+
 $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
 
