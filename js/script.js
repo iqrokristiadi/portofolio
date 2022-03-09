@@ -20,6 +20,7 @@ $('.page-scroll').on('click' , function(e){
 $(window).scroll(function(){
 	var wScroll = $(this).scrollTop();
 
+	// Jumbotron
 	$('.jumbotron img').css({
 		'transform' : 'translate(0px, '+ wScroll/4 +'%)'
 	});
@@ -31,4 +32,17 @@ $(window).scroll(function(){
 	$('.jumbotron p').css({
 		'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
 	});
+
+	// Portofolio
+
+	if(wScroll > $('.portofolio').offset().top - 250){
+		// muncul satu-satu
+		$('.portofolio .thumbnail').each(function(i){
+			setTimeout(function(){
+				$('.portofolio .thumbnail').eq(i).addClass('muncul');
+			},300 * (i+1));
+		});
+
+		
+	}
 });
